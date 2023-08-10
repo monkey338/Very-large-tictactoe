@@ -1,8 +1,8 @@
-#include <cstdlib>
+#include <cstdlib> // libraries
 #include <iostream>
 using namespace std;
 
-string o = " ";
+string o = " "; // variables
     string o2 = " ";
     string o3 = " ";
     string o4 = " ";
@@ -15,8 +15,8 @@ string o = " ";
     int row;
 
 
-int draw() {
-cout << " _ _ _\n";
+int draw() { // the function to draw the tictactoe like columns and rows
+cout << " _ _ _\n"; 
     cout << "|";
     cout << o;
     cout << "|";
@@ -44,7 +44,7 @@ cout << " _ _ _\n";
 
 }
 
-int check() {
+int check() { // the function that checks that if user writes column and row with X
    cout << "Enter column: ";
     cin >> col;
     cout << "Enter row: ";
@@ -87,7 +87,7 @@ int check() {
     }
 }
 
-int check2() {
+int check2() { // the function that checks that if user writes column and row with O
    cout << "Enter column: ";
     cin >> col;
     cout << "Enter row: ";
@@ -132,8 +132,9 @@ int check2() {
 
 
 int main() {
-    draw();
-    check();
+    draw(); // draws
+    check(); // checks
+	// IT ifs TIME!
     if (o == "X" && o2 == "X" && o3 == "X") {
 	   cout << "You Win!\n";
 	   exit(0);
@@ -728,7 +729,8 @@ if (o == "X" && o5 == "X" && o9 == "X") {
 	cout << "You Win!\n";
 	exit(0);
  }
-
+ // finally
+// the IF to check if user has a draw.
  if (o == "X" or o == "O" && o2 == "X" or o2 == "O" && o3 == "X" or o3 == "O" && o4 == "X" or o4 == "O" && o5 == "X" or o5 == "O" && o6 == "X" or o6 == "O" && o7 == "X" or o7 == "O" && o8 == "X" or o8 == "O" && o9 == "X" or o9 == "O") {
     cout << "Draw!\n";
  }
